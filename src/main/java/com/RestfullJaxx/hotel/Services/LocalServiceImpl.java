@@ -31,16 +31,16 @@ public class LocalServiceImpl implements LocalService{
     @Override
     public Local editarLocal(Long id, Local local) {
         Local local1 = localRepositorio.findById(id).get();
-        if (Objects.nonNull(local1.getCode()) && !"".equalsIgnoreCase(local1.getCode())) {
-            local1.setCode(local1.getCode());
+        if (Objects.nonNull(local.getCode()) && !"".equalsIgnoreCase(local.getCode())) {
+            local1.setCode(local.getCode());
 
-            if (Objects.nonNull(local1.getFloor()) && !"".equalsIgnoreCase(local1.getFloor())) {
-                local1.setFloor(local1.getFloor());
+            if (Objects.nonNull(local.getFloor()) && !"".equalsIgnoreCase(local.getFloor())) {
+                local1.setFloor(local.getFloor());
 
             }
 
-            if (Objects.nonNull(local1.getName()) && !"".equalsIgnoreCase(local1.getName())) {
-                local1.setName(local1.getName());
+            if (Objects.nonNull(local.getName()) && !"".equalsIgnoreCase(local.getName())) {
+                local1.setName(local.getName());
 
 
             }
